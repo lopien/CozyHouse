@@ -1,0 +1,813 @@
+/* шрифты  */
+@font-face {
+  font-family: 'Georgia';
+  src: url("../fonts/'Georgia.eot");
+  src: url("../fonts/'Georgia.eot?#iefix") format('embedded-opentype'), url("../fonts/'Georgia.woff2") format('woff2'), url("../fonts/'Georgia.woff") format('woff'), url("../fonts/'Georgia.ttf") format('truetype'), url("../fonts/'Georgia.svg#Georgia") format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arial';
+  src: url('../fonts/ArialMT.eot');
+  src: url('../fonts/ArialMT.eot?#iefix') format('embedded-opentype'), url('../fonts/ArialMT.woff2') format('woff2'), url('../fonts/ArialMT.woff') format('woff'), url('../fonts/ArialMT.ttf') format('truetype'), url('../fonts/ArialMT.svg#ArialMT') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Georgia', sans-serif;
+}
+/* a:hover{
+	text-decoration: none;
+} */
+input:active,
+input:focus {
+  outline: none !important;
+}
+button:active,
+button:focus {
+  outline: none !important;
+}
+textarea:active,
+textarea:focus {
+  outline: none !important;
+}
+/* Typography */
+section {
+  padding: 10rem 0;
+}
+.button {
+  font-family: 'Georgia', sans-serif;
+  padding: 1rem 3rem;
+  border-radius: 60px;
+  font-size: 1.7rem;
+  background-color: #f4d0ba;
+  color: #000000;
+  border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #e5a372;
+  -webkit-box-shadow: 7px 12px 15px 5px rgba(0, 0, 0, 0.17);
+          box-shadow: 7px 12px 15px 5px rgba(0, 0, 0, 0.17);
+}
+.burger-open{
+  display: none;
+}
+.burger {
+  display: none;
+}
+.burger.visible {
+  display: block;
+}
+.main {
+  background: #000000 url(../img/bg.jpg) center center no-repeat;
+  padding: 3rem 0 5rem;
+  background-size: cover;
+}
+.main-header {
+  margin-top: 3rem;
+}
+.main-header-img {
+  margin-left: 5rem;
+}
+.main-header h1 {
+  font-size: 2.9rem;
+  color: #f1cdb3;
+}
+.main-header p {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+.main-nav {
+  text-align: center;
+}
+.main-nav a {
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.main-nav a:hover {
+  color: #000000;
+  background: #f0a373;
+  -webkit-box-shadow: 0 0 5px #f0a373,0 0 20px #f0a373,0 0 40px #f0a373;
+          box-shadow: 0 0 5px #f0a373,0 0 20px #f0a373,0 0 40px #f0a373;
+  border-radius: 10px;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+.main-nav a span {
+  position: absolute;
+  display: block;
+}
+.main-content h1 {
+  font-family: 'Georgia', sans-serif;
+  margin-top: 26rem;
+  font-size: 4.4rem;
+  color: #ffffff;
+}
+.main-content p {
+  margin-top: 4.8rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.main-content-btn {
+  margin-top: 4.8rem;
+  margin-bottom: 20rem;
+}
+.about-pets {
+  text-align: center;
+}
+.about-content h1 {
+  color: #545454;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-right: 3rem;
+}
+.about-content p {
+  font-family: "Arial", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+.pets {
+  background-color: #f6f6f6;
+}
+.pets-header h1 {
+  margin-top: -5rem;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #545454;
+  margin-bottom: 2rem;
+}
+.pets-block {
+  outline: none;
+  margin-top: 5rem;
+  text-align: center;
+}
+.pets-block h3 {
+  margin-bottom: 1.5rem;
+}
+.pets-block img {
+  display: block;
+  margin: 0 auto;
+}
+.pets-btn {
+  font-family: 'Georgia', sans-serif;
+  padding: 1rem 3rem;
+  border-radius: 60px;
+  font-size: 1.7rem;
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #f4d0ba;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.pets-btn-more {
+  text-align: center;
+}
+.pets-btn-more a {
+  padding: 1.2rem 3rem;
+  text-decoration: none;
+  color: #000000;
+}
+.pets-btn:hover {
+  cursor: pointer;
+  background-color: #e5a372;
+  box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+}
+.pets-slider {
+  border: none;
+}
+.pets-img {
+  position: relative;
+}
+.pets-block:hover .pets-img{
+  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.17);
+}
+
+.pets-relative {
+  position: relative;
+  top: -12rem;
+}
+/* Кнопки на слайдере вперед назад */
+.arrow {
+  top: 40%;
+  -webkit-transform: scaleY(-50%);
+          transform: scaleY(-50%);
+  position: absolute;
+  z-index: 2;
+  width: 2rem;
+  height: 2rem;
+  border: 1.5px solid #f4d0ba;
+  border-radius: 90px;
+  padding: 2rem;
+}
+.arrow:hover {
+  background-color: #f4d0ba;
+}
+.prev {
+  left: -2rem;
+  background: url(..//img/pets/left-arrow.svg) center no-repeat;
+  background-size: 50%;
+}
+.next {
+  right: -2rem;
+  background: url(..//img/pets/right-arrow.svg) center no-repeat;
+  background-size: 50%;
+}
+.slick-active {
+  outline: none;
+}
+/* Помошь животным */
+.help-items {
+  text-align: center;
+}
+.help-items img {
+  margin-top: 4rem;
+}
+.help-items h4 {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  font-size: 1.8rem;
+  color: #545454;
+  font-family: 'Georgia', sans-serif;
+}
+/*  */
+.donation {
+  margin-top: -7rem;
+  background: #f6f6f6;
+}
+.donation-photo{
+  width: 100%;
+}
+.donation-card img {
+  width: 50px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.donation-body {
+  margin-top: -5rem;
+}
+.donation-body h1 {
+  font-size: 3.5rem;
+}
+.donation-body p {
+  width: 100%;
+  font-family: "Arial", sans-serif;
+}
+.donation-body p img {
+  height: 3.2rem;
+  margin-top: 0.8rem;
+  margin-right: 1.5rem;
+  margin-left: 1rem;
+}
+.donation-body img {
+  margin-bottom: 1rem;
+}
+.donation-text {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+.donation-card {
+  font-size: 1.9rem;
+  padding: 1.3rem 1.5rem 1.3rem 0.5rem;
+  display: inline;
+  border-radius: 1rem;
+  background-color: #f1cdb3;
+  background-size: 100px auto;
+  font-weight: 100;
+}
+footer {
+  background: #ffffff url(../img/dog_bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+footer img {
+  float: left;
+  margin: 0rem 1rem;
+}
+footer p {
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  color: #f1cdb3;
+  font-size: 2rem;
+}
+footer h2 {
+  margin-top: 1rem;
+  font-size: 2.8rem;
+  color: #ffffff;
+}
+.footer-p {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  color: #f1cdb3;
+  font-size: 2rem;
+}
+
+.popup{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-content {
+  text-align: center;
+  z-index: 50;
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+  padding: 4rem 6rem;
+}
+.popup-content-img {
+  padding-right: 31rem;
+}
+.popup-content-text {
+  padding-left: 5rem;
+}
+.popup-content h1 {
+  font-size: 3.5rem;
+}
+.popup-content h4 {
+  font-size: 2rem;
+}
+.popup-content p {
+  text-align: left;
+  font-size: 1.5rem;
+}
+.popup-content li {
+  color: #f1cdb3;
+  margin-left: -2rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
+.popup-content li span {
+  color: #000000;
+}
+.popup-close {
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+  width: 2rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 4rem;
+  color: #ffffff;
+}
+.popup_1 {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup_1-content {
+  text-align: center;
+  z-index: 50;
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+  padding: 4rem 4rem;
+}
+.popup_1-content-img {
+  padding-right: 35rem;
+}
+.popup_1-content-img img {
+  width: 40rem;
+}
+.popup_1-content-text {
+  padding-left: 5rem;
+}
+.popup_1-content h1 {
+  font-size: 3.5rem;
+}
+.popup_1-content h4 {
+  font-size: 2rem;
+}
+.popup_1-content p {
+  text-align: left;
+  font-size: 1.5rem;
+}
+.popup_1-content li {
+  color: #f1cdb3;
+  margin-left: -2rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
+.popup_1-content li span {
+  color: #000000;
+}
+.popup_1-close {
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+  width: 2rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 4rem;
+  color: #ffffff;
+}
+.popup_2 {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.popup_2-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  z-index: 50;
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  background-color: none;
+  transform: translateX(-50%);
+}
+.popup_2-content-img {
+  fill: transparent;
+  stroke: 10;
+  stroke: #31e8ff;
+}
+.popup_2-content-img img {
+  width: 30rem;
+}
+.popup_2-close {
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+  width: 2rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 4rem;
+  color: #ffffff;
+}
+@media (max-width: 1199px) {
+  .burger-open {
+    display: none;
+  }
+  .burger {
+    display: none;
+  }
+  .burger.visible {
+    display: block;
+  }
+  .donation-card img {
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .donation-body {
+    margin-left: 3rem;
+  }
+}
+@media (max-width: 991px) {
+  .burger-open {
+    display: none;
+  }
+  .burger {
+    display: none;
+  }
+  .burger.visible {
+    display: block;
+  }
+  .about-pets {
+    margin-bottom: 2rem;
+  }
+  .prev {
+    left: -5rem;
+  }
+  .next {
+    right: -5rem;
+  }
+  .donation-photo {
+    width: 100%;
+  }
+  .donation-card img {
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .donation-body {
+    width: 100%;
+    margin-top: 4rem;
+    margin-left: 0rem;
+  }
+  footer {
+    background-position: 60%;
+  }
+  .popup-content-img {
+    padding-right: 0rem;
+  }
+  .popup-content-text {
+    padding-left: 0rem;
+  }
+  .popup_1-content-img {
+    padding-right: 0rem;
+  }
+  .popup_1-content-text {
+    padding-left: 0rem;
+  }
+}
+@media (max-width: 767px) {
+  .overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+  }
+  .overlay.visible {
+    display: block;
+    background-color: rgb(0, 0, 0, 0.4);
+  }
+  .burger-open {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: #ffebdc;
+    border-radius: 50px;
+  }
+  .burger-open span,
+  .burger-open span:before,
+  .burger-open span:after{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #6d3204;
+  }
+  .burger-open span:before {
+    content: '';
+    top: -12px;
+  }
+  .burger-open span:after {
+    content: '';
+    top: 12px;
+  }
+  .main {
+    background-position: 50%;
+    text-align: center;
+  }
+  .main-header-img {
+    margin-right: 4rem ;
+  }
+  .main-nav {
+    display: none;
+  }
+  .main a {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .main a:hover::after {
+    transform: scaleX(0.4);
+  }
+  .main-content {
+    margin-top: 56rem;
+  }
+  .burger.visible {
+    display: block;
+    width: 280px;
+    height: 100%;
+    background: #f4d0ba;
+    position: absolute;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 51;
+    transition: 1s;
+  }
+  .burger-links{
+    height: 100%;
+    /* top: 50%;
+    left: 50%;
+    transform: translateY(50%); */
+  }
+
+  .burger-close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .burger .main-header-img {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .burger h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .burger-nav {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  .burger-nav:hover {
+    color: #000000;
+    background: #f0a373;
+    box-shadow: 0 0 5px #f0a373, 0 0 20px #f0a373, 0 0 40px #f0a373;
+    border-radius: 10px;
+    transition-delay: 0.1s;
+  }
+  .about-pets {
+    margin-bottom: 2rem;
+  }
+  .prev {
+    left: 0rem;
+  }
+  .next {
+    right: 0rem;
+  }
+  .donation-photo {
+    width: 100%;
+  }
+  .donation-card img {
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  footer {
+    background-position: 70%;
+  }
+  .popup-content {
+    width: 85%;
+    padding: 1rem 1rem;
+  }
+  .popup-content-img {
+    padding-right: 0rem;
+  }
+  .popup-content-img img {
+    width: 60%;
+  }
+  .popup-content-text {
+    padding-left: 1rem;
+  }
+  .popup_1-content {
+    width: 85%;
+    padding: 1rem 1rem;
+  }
+  .popup_1-content-img {
+    padding-right: 0rem;
+  }
+  .popup_1-content-img img {
+    width: 80%;
+  }
+  .popup_1-content-text {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .burger-open {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    background-color: #ffebdc;
+    border-radius: 50px;
+  }
+  .burger-open span,
+  .burger-open span:before,
+  .burger-open span:after {
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #6d3204;
+  }
+
+  .burger-open span:before {
+    content: '';
+    top: -10px;
+  }
+
+  .burger-open span:after {
+    content: '';
+    top: 10px;
+  }
+  .main-content {
+    margin-top: 56rem;
+  }
+  .burger.visible {
+
+    width: 280px;
+    height: 100%;
+    background: #f4d0ba;
+    position: absolute;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 51;
+    transition: 1s;
+  }
+  .burger-close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .burger .main-header-img {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .burger h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .burger-nav {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  .burger-nav:hover {
+    color: #000000;
+    background: #f0a373;
+    box-shadow: 0 0 5px #f0a373, 0 0 20px #f0a373, 0 0 40px #f0a373;
+    border-radius: 10px;
+    transition-delay: 0.1s;
+  }
+  .donation-photo img{
+    width: 100%;
+  }
+  .donation-card img{
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+}
